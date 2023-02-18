@@ -1,0 +1,166 @@
+body {
+    background-color: #5F6472;
+}
+.logo {
+    width: 201.43px;
+    height: 40px;
+    margin-left: 134px;
+    margin-top: 27px;
+}   
+.navigation {
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.group.active {
+    display: flex;
+    background-color: #2D3038;
+    border-radius: 4px;
+}
+.group {
+    width: 270px;
+    height: 227px;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    
+
+}
+.line {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+.line::before,
+.line::after {
+    content: '';
+    position:absolute;
+    transition: all .5s ease-in-out;
+}
+.line::before {
+    transform: translateY(-16px);
+}
+.line::after {
+    transform: translateY(16px);
+}
+/* ANIMATION */
+.burger.open .line {
+    transform: translateY(1px);
+}
+.burger.open #line1 {
+   transform: translateY(1px) rotate(-45deg);
+}
+.burger.open #line2 {
+    transform: translateY(-6px) rotate(45deg);
+}
+.burger.open #line3 {
+    display: none;
+}
+
+
+
+
+/* ANIMATION-END */
+.burger {
+    display: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 2px;
+}
+.group h4 {
+    color: #979797;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    font-family: 'Roboto';
+
+
+}
+.group ul li {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #979797;
+    line-height: 44px;
+    cursor: pointer;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    
+}
+.blackdiv {
+    background:linear-gradient(124.01deg, #2D3038 0%, rgba(45, 48, 56, 0) 100%) ; 
+    display: flex;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    width: 706px;
+    height: 500px;
+    flex-direction: column;
+}
+.blackdiv h4 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    padding-left: 51px;
+    line-height: 74px;
+}
+.test {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #979797;
+    padding-left: 51px;
+
+}
+.cargospan {
+    padding-left: 51px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #979797;
+
+}
+
+.cargobox {
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    margin-left: 51px;
+}
+.spanofnumbercargo {
+    color: #979797;
+    padding-top: 30px;
+    font-family: Roboto;
+    font-size: 24px;
+    padding-left: 51px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
