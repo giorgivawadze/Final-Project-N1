@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="images/icon.jpg">
     <script defer src="index.js"></script>
     <script defer src="burger.js"></script>
+    
 </head>
 <body>
     <header><img class="logo" src="images/Logo.svg" alt="logo"></header>
@@ -25,20 +28,28 @@
       
         <h4>SHIPMENT LIST</h4>
           <ul>
-            <li>Amazon</li>
+             <li>Amazon</li>
             <li>American Express</li>
             <li>Walmart</li>
             <li>Apple</li>
           </ul>
      </div>
      </div>
+     <div class="searchdiv">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      
+     <input type="search" class="searchbtn" id="search" placeholder="Search">
+
+    </div>
+  
      <div class="blackdiv">
-     <h4>Test</h4>
-     <span class="test">test@gmail.com</span>
+     <h4 id="companyname">Test</h4>
+     <span id="gmail" class="test">test@gmail.com</span>
      <span class="cargospan">CARGO BOXES</span>
-     <input class="cargobox" type="text" name="Cargobox" id="box">
+     <input class="cargobox" type="text" name="Cargobox" id="box" >
       <span class="spanofnumbercargo">Number of required cargo bays</span>
      </div>
+    
     </section>
 </body>
 </html>
